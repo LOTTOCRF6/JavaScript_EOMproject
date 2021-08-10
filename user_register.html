@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration</title>
+    <link rel="stylesheet" href="styles/user_register.css" />
+    <script src="./JS/user_register.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        class="registration"
+        action="https://protected-lake-94601.herokuapp.com/user-registration/"
+        method="POST"
+      >
+        <h1>Registration Form</h1>
+
+        <label for="Name">
+          <span>Name</span>
+
+          <input
+            type="text"
+            name="first_name"
+            id="first_name"
+            minlength="3"
+            placeholder="name"
+            required
+          />
+
+          <ul class="input-requirements">
+            <li>Please enter a valid name</li>
+          </ul>
+        </label>
+
+        <label for="Surname">
+          <span>Surname</span>
+
+          <input
+            type="text"
+            name="last_name"
+            id="last_name"
+            minlength="3"
+            required
+          />
+
+          <ul class="input-requirements">
+            <li>Please enter valid surname</li>
+          </ul>
+        </label>
+
+        <label for="username">
+          <span>Username</span>
+
+          <input
+            type="text"
+            name="username"
+            id="username"
+            minlength="3"
+            required
+          />
+
+          <ul class="input-requirements">
+            <li>At least 8 characters long</li>
+            <li>
+              Must only contain letters and numbers (no special characters)
+            </li>
+          </ul>
+        </label>
+
+        <label for="password">
+          <span>Password</span>
+
+          <input
+            type="password"
+            name="password"
+            id="password"
+            maxlength="100"
+            minlength="8"
+            required
+          />
+
+          <ul class="input-requirements">
+            <li>At least 8 characters long (and less than 100 characters)</li>
+            <li>Contains at least 1 number</li>
+            <li>Contains at least 1 lowercase letter</li>
+            <li>Contains at least 1 uppercase letter</li>
+            <li>Contains a special character (e.g. @ !)</li>
+          </ul>
+        </label>
+
+        <label for="address">
+          <span>Address</span>
+
+          <input
+            type="text"
+            name="address"
+            id="address"
+            minlength="3"
+            required
+          />
+
+          <ul class="input-requirements">
+            <li>Please enter valid address of your place</li>
+          </ul>
+        </label>
+
+        <label for="phone">
+          <span>Phone</span>
+
+          <input type="text" name="phone" id="phone" maxlength="15" required />
+
+          <ul class="input-requirements">
+            <li>
+              Please enter valid phone number as we will contact you in it.
+            </li>
+          </ul>
+        </label>
+
+        <label for="email">
+          <span>Email</span>
+
+          <input type="email" name="email" id="email" maxlength="30" required />
+
+          <ul class="input-requirements">
+            <li>At least 40 characters long</li>
+            <li>Please enter valid email address!</li>
+          </ul>
+        </label>
+
+        <br />
+
+        <input type="submit" onclick="myFunction()" />
+
+        <script>
+          function myFunction() {
+            alert("Registration Successful! Go login");
+          }
+        </script>
+      </form>
+    </div>
+  </body>
+</html>

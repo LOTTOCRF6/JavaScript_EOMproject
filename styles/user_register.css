@@ -9,6 +9,7 @@ body {
     line-height: 1.6;
     font-family: 'Source Sans Pro';
     background-color: rgb(19, 12, 12);
+    
 }
 
 h1 {
@@ -370,4 +371,13 @@ input:not([type="submit"]):focus + .input-requirements,
 input:not([type="submit"]):active + .input-requirements {
   max-height: 1000px; /* any large number (bigger then the .input-requirements list) */
   transition: max-height 1s ease-in;
+}
+.message {
+  margin: 15px 0 0;
+  color: #160f0f;
+  font-size: 12px;
+}
+.message a {
+  color: #4CAF50;
+  text-decoration: none;
 }

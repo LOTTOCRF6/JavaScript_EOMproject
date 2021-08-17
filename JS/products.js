@@ -78,13 +78,14 @@ function renderCart(cartItems) {
   }
 }
 function addToCart(id) {
-  console.log(products.data);
+  // console.log(products.data);
   let product = products.data.find((item) => {
     return item.id == id;
   });
   console.log(product);
   cart.push(product);
-  console.log("your are cart items", cart);
+  console.log(cart);  
+  //console.log("your are cart items", cart);
   renderCart(cart);
 }
 

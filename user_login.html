@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Point of Sale</title>
+    <link rel="stylesheet" href="styles/registration.css" />
+    <script src="./user_login.js"></script>
+  </head>
+  <body>
+    <div class="login-page">
+      <h2 class="heading" style="font-family: 'Times New Roman', Times, serif">
+        Welcome to Dead Line USB Store!
+      </h2>
+      <div class="form">
+        <form class="register-form"></form>
+        <form class="login-form">
+          <h4>Login</h4>
+          <input type="text" id="username" placeholder="username" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="password"
+            required
+          />
+          <button onclick="event.preventDefault(),Login()">Login</button>
+          <p class="message">
+            Not registered? <a href="./user_register.html">Create an account</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

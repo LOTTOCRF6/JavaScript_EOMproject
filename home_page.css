@@ -82,7 +82,11 @@
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
-    color: white;
+    color: rgb(23, 161, 161);
+    margin-top: -205px;
+    font-style:oblique;
+    font-weight: 500px;
+    font-size: 30px;
   }
   
   .text-center {

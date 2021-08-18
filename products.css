@@ -28,34 +28,41 @@
   object-fit: cover;
 }
 
-/* Cart */
-
 /* cart */
 #cart {
   position: fixed;
   top: 0;
   left: 100%;
-  width: 100vw;
+  width: 100%;
   bottom: 0;
   z-index: 3;
-  color: rgb(24, 27, 27);
-  background-color: yellow;
+  background-color: #0a0d0f;
   transition: all 0.2s linear;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  color: aqua;
+}
+
+#cart-button {
+  position: fixed;
+  right: 5%;
+  top: 10%;
+  z-index: 10;
+  margin-top: -37px;
+  margin-right: -45px;
+  color:rgb(42, 165, 165);
+  background-color: #0a0d0f;
+  border-radius: 2%;
 }
 
 #cart.active {
-  left: 100;
-}
-#button-cart {
-  position: fixed;
-  right: 5%;
-  bottom: 5%;
-  z-index: 10;
-  color: black;
+  left: 0;
 }
 

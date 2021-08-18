@@ -10,11 +10,7 @@
   </head>
   <body>
     <div class="container">
-      <form
-        class="registration"
-        action="https://protected-lake-94601.herokuapp.com/user-registration/"
-        method="POST"
-      >
+      <form class="registration">
         <h1>Registration Form</h1>
 
         <label for="Name">
@@ -131,13 +127,13 @@
 
         <br />
 
-        <input type="submit" onclick="myFunction()" />
+        <input type="submit" onclick="event.preventDefault(), userRegister()" />
         <p class="message">Successful registered you can <a href="./index.html">Login</a></p>
 
-        <script>
-          function myFunction() {
+        <!-- <script>
+          function userRegister() {
             alert("Registration Successful! Go login");
-          }
+          } -->
         </script>
       </form>
     </div>

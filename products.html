@@ -7,10 +7,11 @@
     <title>Products</title>
     <script src="./products.js"></script>
     <link rel="stylesheet" href="products.css">
+
   </head>
   <body>
     <div id="filters">
-      <form onsubmit="event.preventDefault(); searchProducts();">
+      <form onsubmit="event.preventDefault(),searchProducts()">
         <input type="text" required id="searchTerm" />
         <button type="submit">Search</button>
       </form>
@@ -19,9 +20,7 @@
       <div class="container"></div>
     </div>   
     <!-- cart -->
-    <!-- <button onclick="getData()">clear cart</button> -->
-    </div>
-    <div id="cart">hello</div>
-    <button onclick="toggleCart()" id="button-cart">cart</button>
+    <div id="cart"><p>You have no items in the cart</p></div>
+    <button onclick="toggleCart()" id="cart-button">Cart</button>
   </body>
 </html>  
